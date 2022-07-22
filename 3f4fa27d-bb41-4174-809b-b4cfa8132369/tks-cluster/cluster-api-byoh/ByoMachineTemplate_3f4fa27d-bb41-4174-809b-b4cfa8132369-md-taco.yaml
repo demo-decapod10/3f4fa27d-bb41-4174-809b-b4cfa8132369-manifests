@@ -1,0 +1,12 @@
+# Source: cluster-api-byoh/templates/machinedeployment.yaml
+apiVersion: infrastructure.cluster.x-k8s.io/v1beta1
+kind: ByoMachineTemplate
+metadata:
+  name: 3f4fa27d-bb41-4174-809b-b4cfa8132369-md-taco
+  namespace: argo
+spec:
+  template:
+    spec:
+      selector:
+        matchLabels:
+          role: tks
